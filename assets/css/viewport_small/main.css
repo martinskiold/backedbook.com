@@ -1,0 +1,825 @@
+/* CSS for small screens by Martin Skiöld 2014 */
+
+/* Stilmall för skärmar upp till 799 pixlar breda. */
+/***************************************************/
+
+	@media screen and (max-width: 799px) {
+
+
+
+
+
+											/***************************************************/
+											/* CSS reset */
+
+												/* http://meyerweb.com/eric/tools/css/reset/
+												v2.0 | 20110126 License: none (public domain) (Manipulated by Martin Skiöld 2014) */
+												html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+												a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+												b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+												table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+												figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+												time, mark, audio, video {
+												margin: 0;
+												padding: 0;
+												border: 0;
+												}
+												/* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+												display: block; }
+												body {
+												line-height: 1.5; }
+												ol, ul {
+												list-style: none; }
+												blockquote, q {
+												quotes: none; }
+												blockquote:before, blockquote:after, q:before, q:after {
+												content: none; }
+												table {
+												border-collapse: collapse;
+												border-spacing: 0; }
+
+											/***************************************************/
+
+
+
+
+
+
+/* Main style */
+/***************************************************/
+
+	/* Selektor */
+	/* Alla element */	
+	*{
+		/* Deklaration */
+		/* Default-storlek till 100% */
+		font-size: 100%;
+		/* Ärver font-stil */
+		font: inherit;
+		/* Placerar text i förälderns baslinje */
+		vertical-align: baseline;
+	}
+
+	/* Sådant som inte ska visas på mobilsidan */
+	figure, #arrow_down{
+		/* Visas ej */
+		display: none;
+	}
+
+	
+		/* Hela html-dokumentet */	
+		html{
+			/* Sätter höjden på html-elementet till 100% */
+			height: 100%;
+		}
+
+			/* Html-dokumentets kropp */
+			body{
+				/* Alla barn utgår från denna del av html-dokumentet */
+				position: relative;
+				/* Höjd 100% */
+				height: 100%;
+				/* Body fortsätter ej minska efter det att den minskats till 860px */
+				min-width: 250px;
+			}
+
+				/* En klass-selektor för element som ska cleara float från båda håll */ 
+				.clear{
+					/* Clearar float från båda håll */
+					clear: both;
+				}
+
+				/* En stilregel för en klass som korrigerar bortfallet av övre margin på direkt 
+				efterkommande element efter en float */
+				.clearMargin{
+					/* Marginaljustering nedtill baserad på textstorlek */
+					margin-bottom: 2em; 
+				}
+
+				/* Bakgrundsbild */
+				#background_img{
+					/* Bredd på 100% av fönsterbredden */
+					width: 100%;
+				}
+
+				/* Vänsterkolumn ovanpå bakgrunden */
+				#leftColIntro{
+					/* Absolut positionering */
+					position: absolute;
+					/* Vänstermarginal baserad på textstorlek */
+					left: 1.6em;
+					/* Toppmarginal baserad på textstorlek */
+					top: 3.8em;
+				}
+
+				/* Vänsterkolumn ovanpå bakgrunden för sidrubriker */
+				#leftColIntro_header{
+					/* Absolut positionering */
+					position: absolute;
+					/* Vänstermarginal baserad på textstorlek */
+					left: 1.6em;
+					/* Toppmarginal på 50% av fönsterhöjden */
+					top: 3.5em;
+					/* Bredd baserad på textstorlek */
+					width: 14em;
+				}
+
+				/* En kolumn, wrapper */
+				#oneCol{
+					/* Marginaljustering på 5% uppe och nere och 27% från sidorna */
+					margin: 5% 10%;
+				}
+
+				/* Flera kolumner, wrapper */
+				#multiCol{
+					/* Marginaljustering på 5% uppe och nere och 27% från sidorna */
+					margin: 5% 10%;
+				}
+
+				/* Knappar i numrerade listor */
+				ol button{
+					/* Vanlig textstorlek */
+					font-size: 1em;
+					/* Smal tjocklek på texten */
+					font-weight: 300;
+					/* Återställer textstilen, dvs. tar bort exemepelvis kursiv textstil */
+					font-style: normal;
+					/* Marginaljustering baserad på textstorlek */
+					margin: 0.5em 0.6em;
+				}
+
+
+/* /Main style */
+/***************************************************/
+
+
+
+
+
+
+/* Text */
+/***************************************************/
+
+	/* Default-stil för text */
+	p, h1, h2, h3, h4, td, th, span, blockquote, q, li, a, button{
+		font-family: "Avenir Next", Helvetica, sans-serif;
+	}
+
+		/* Andra nivåns rubrik */
+		h2{
+			/* Byter rad mitt i ord om så behövs */
+			word-wrap: break-word;
+			/* Tillåter ej overflow */
+			overflow: hidden;
+			/* Toppmarginaljustering, important för att förhindra css-reset */
+			margin-top: 1.2em !important;
+			/* Bottenmarginaljustering, important för att förhindra css-reset */
+			margin-bottom: 0.5em !important;
+			/* Stor textstorlek */
+			font-size: 2em;
+			/* Tunn texttjocklek */
+			font-weight: 300;
+		}
+
+		/* Tredje nivåns rubrik */
+		h3{
+			/* Serif teckensnitt */
+			font-family: "Times New Roman", Times, serif;
+			/* Byter rad mitt i ord om så behövs */
+			word-wrap: break-word;
+			/* Tillåter ej overflow */
+			overflow: hidden;
+			/* Blockelement */
+			display: block;
+			/* Toppmarginaljustering, important för att förhindra css-reset */
+			margin-top: 1.2em !important;
+			/* Bottenmarginaljustering, important för att förhindra css-reset */
+			margin-bottom: 0.5em !important;
+			/* Stor textstorlek */
+			font-size: 1.3em;
+			/* Mörkgrå textfärg */
+			color: #454545;
+		}
+
+		/* Fjärde nivåns rubrik */
+		h4{
+			/* Serif teckensnitt */
+			font-family: "Times New Roman", Times, serif;
+			/* Byter rad mitt i ord om så behövs */
+			word-wrap: break-word;
+			/* Tillåter ej overflow */
+			overflow: hidden;
+			/* Blockelement */
+			display: block;
+			/* Bottenmarginaljustering */
+			margin: 0.6em 0 !important;
+			/* Stor textstorlek */
+			font-size: 1.2em;
+			/* Mörkgrå textfärg */
+			color: #454545;
+		}
+
+		/* Citat */
+		blockquote{
+			/* Byter rad mitt i ord om så behövs */
+			word-wrap: break-word;
+			/* Tillåter ej overflow */
+			overflow: hidden;
+			/* Blockelement */
+			display: block;
+			/* Marginaljustering för topp och botten, viktig för att förhindra css-reset */
+			margin: 1em 0 !important;
+			/* Centrerad text */
+			text-align: center;
+			/* Stor textstorlek */
+			font-size: 1.6em;
+		/* Före elementet */
+		}blockquote *:before { 
+				/* Lägger till citationstecken innan */
+				content: '\201C';
+				/* Serift teckensnitt */
+				font-family: Times, "Times New Roman", serif !important; 
+		/* Efter elementet */
+		}blockquote *:after { 
+				/* Lägger till citationstecken efter */
+				content: '\201D';
+				/* Serift teckensnitt */
+				font-family: Times, "Times New Roman", serif !important; 
+		}
+
+			/* Annan stil någonstans i citatet */
+			blockquote span{
+				/* Blockelement */
+				display: block;
+				/* Default-teckensnitt för hemsidan */
+				font-family: "Avenir Next", Helvetica, sans-serif;
+				/* Tunn tjocklek */
+				font-weight: 300;
+				/* Marginaljustering på topp och botten med 4% av fönsterhöjden */
+				margin: 4% 0 !important;
+			}
+
+		/* Betonad text */
+		em{
+			/* Lite större textstorlek */
+			font-size: 1.2em;
+			/* Kursiv */
+			font-style: oblique;
+			color: #333;
+		}
+
+		/* Text med id:t intro_text, (välkomnstexten på index-sidan) */
+		#intro_text{
+			/* Bryter ord i texten om så behövs*/
+			word-wrap: break-word;
+			/* Förhindrar overflow */
+			overflow: hidden;
+			/* Som mest 350 pixlar bred */
+			max-width: 330px;
+			/* Radhöjd */
+			line-height: 1.2;
+			/* Tunn texttjocklek */
+			font-weight: 300;
+			/* Vit textfärg */
+			color: white;
+		}
+
+			/* Med klassen large_text */
+			.large_text{
+				/* Större textstorlek */
+				font-size: 1.5em;
+			}
+
+			/* Med klassen small_text */
+			.small_text{
+				/* Mindre textstorlek */
+				font-size: 0.8em;
+			}
+
+/* /Text */
+/***************************************************/
+
+
+	
+
+
+
+
+
+
+/* Lists */
+/***************************************************/
+
+	/* Onumrerade listor i main-wrappern */
+	main ul{
+		/* Listpunktsstil i form av diskar */
+		list-style-type: disc;
+		/* Punkterna visas innanför elementets innehåll */
+		list-style-position: inside;
+		/* Ljusgrå färg */
+		color: #999;
+	}
+
+		/* Listpunkter i onumrerade listor inuti main */
+		main ul li{
+			/* Padding åt alla håll baserad på textstorlek */
+			padding: 0.3em;
+		}
+
+		/* Paragrafer i onumrerade listor i main */
+		main ul li p{
+			/* Padding åt alla håll baserad på textstorlek */
+			padding: 0.7em;
+			/* Svart textfärg */
+			color:black;
+		}
+
+	/* Numrerade listor inuti main */
+	main ol{
+		/* Marginaljustering för topp och botten baserad på textstorlek */
+		margin: 1em 0;
+		width: auto;
+		/* Kursiv text */
+		font-style:italic;
+	}
+
+		/* Listpunkter i numrerade listor inuti main */
+		main ol li{
+			/* Ljusgrå text */
+			color: #aaa;
+			width: auto;
+			/* Serif typsnitt, markerad som viktig för att stå över andra regler, exempelvis, css-reset i main.css */
+			font-family: Times, "Times New Roman", serif !important;
+			/* Textstorlek */
+			font-size: 1.4em;
+			/* Numrering med vanliga decimala siffror */
+			list-style-type: decimal;
+			/* Numrering innanför elementets innehåll */
+			list-style-position: inside;
+		}
+
+		/* Listpunkter i numrerade listor inuti main */
+		main ol li p{
+			/* Skapar lite luft mellan listan och paragrafen */
+			padding: 0.5em;
+			/* Textstil till normal, tar bort ex. kursiv */
+			font-style: normal;
+			/* Default-typsnitt för hemsidan */
+			font-family: "Avenir Next", Helvetica, sans-serif;
+			/* Mindre textstorlek */
+			font-size: 0.65em;
+			/* Svart textfärg */
+			color:black;
+		}
+
+/* /Lists */
+/***************************************************/
+
+
+
+
+
+
+
+
+/* Forms */
+/***************************************************/
+
+	/* Alla formulär */
+	form{
+		width: auto;
+	}
+
+		/* Alla element inkapslade i ett formulär */
+		form *{
+			/* Marginaljustering på botten och toppen baserat utifrån textstorleken */
+			margin: 0.5em 0 !important;
+			/* Default-font för hemsidan */
+			font-family: "Avenir Next", Helvetica, sans-serif;
+		}
+
+		/* Formulärets etiketter */
+		form label{
+			/* Renderar som ett block-element */
+			display: block;
+		}
+
+		/* Formulärs textarealer */
+		form textarea{
+			/* Sätter breddeen på textarealen till 95% av wrapperns bredd */
+			width: 95%;
+			/* Marginaljustering från toppen med 1% av fönsterhöjden */
+			margin-top: 1%;
+		}
+
+		/* Input-fält i formulär */
+		form .input_text{
+			width: 250px;
+		}
+
+		/* Submitknapp och resetknapp i formulär. Selektion sker via elementets id. */
+		form #submit, form #reset{
+			width: 100px;
+		}
+
+/* /Forms */
+/***************************************************/
+
+
+
+
+
+
+
+/* Tables */
+/***************************************************/
+	
+	/* Tabeller inuti main-wrappern */
+	main table{
+		/* Marginaljustering från toppen baserad på textstorleken */
+		margin-top: 2em;
+		width: 100%;
+	}
+
+		/* Tabellrubriker */
+		table th{
+			/* Svart bottenkant */
+			border-bottom: 1px solid black;
+			/* Större än normalstorlek */
+			font-size: 8pt;
+			/* Mörkgrå textfärg */
+			color: #444;
+			/* Centrerad text */
+			text-align: center;
+		}
+
+		/* Tabellinnehåll */
+		table td{
+			/* Padding baserad på textstorlek */
+			padding: 1em 1em;
+			/* Lite mindre textstorlek än normalstorleken */
+			font-size: 7pt;
+			/* Centrerad text */
+			text-align: center;
+			/* Ljusgrå bottenkant för att urskilja de olika tabellraderna */
+			border-bottom: 1px solid #ccc;
+		}
+
+		/* De tabellrader som är av klassen data */
+		/* Hover-effekt */
+		table .data:hover{
+			/* Ljusgrå bakgrund */
+			background-color: #ddd;
+		/* Tabb-effekt */
+		}table .data:focus{
+			/* Ljusgrå bakgrund */
+			background-color: #ddd;
+		}
+
+/* /Tables */
+/***************************************************/
+
+
+
+
+
+
+/* Header */
+/***************************************************/
+
+	/* Logotyp */
+	h1 a{
+		/* Absolut positionering */
+		position: absolute;
+		/* Logotyp börjar högst upp */
+		top: 0;
+		/* Skapar en svart undre kant för att skilja mellan text underliggande text */
+		border-bottom: 1px dotted white;
+		/* Marginaljustering baserad på textstorlek */
+		margin: 1.6em 1.6em;
+		/* Vit färg */
+		color: white;
+		/* Ingen dekoration, tar bort ev. understrykning */
+		text-decoration: none;
+		/* Textstorlek större än normal */
+		font-size: 1em;
+		/* Relativt smal texttjocklek */
+		font-weight: 300;
+	/* Hovereffekt */
+	}h1 a:hover, h1 a:focus{
+			/* Grå textfärg */
+			color: #bbb;
+	/* Vid knapptryck */
+	}h1 a:active{
+			/* Textstorlek lite mindre */ 
+			font-size: 0.97em;
+	}
+
+	/* Wrapper till det övre navigationsfältet */
+	header nav{
+		/* Marginaljsutering baserad på textstorlek */
+		padding: 0.8em 10%;
+		/* Bredd baserad på fönsterbredd */
+		width: 80%;
+		/* Svart undre kant */
+		border-bottom: 1px dotted black;
+	}
+
+		/* Navigaitonslänkar */
+		header nav a{
+			/* Lite större textstorlek */
+			font-size: 1.5em;
+			/* Omvandlar bokstäver till gemener */
+			text-transform: lowercase;
+			/* Tar bort ev. understrykning */
+			text-decoration: none;
+			/* Vit textfärg */
+			color: black;
+			/* Tunn texttjocklek */
+			font-weight: 300;
+		/* Hover-effekt */
+		}header nav a:hover, header nav a:focus{
+				/* Grå textfärg */
+				color: #bbb;
+		/* Vid knapptryckning */	
+		}header nav a:active{
+			/* Större textstorlek än normalt */
+			font-size: 1.45em;
+		}
+
+	/* Länk tillhörande den nuvarande sidan */
+	.active{
+		/* Svart nedre kant för att visa vilken delsida användaren står på */
+		border-bottom: 1px dotted black;
+	/* Vid knapptryckning */
+	}.active:active{
+	}
+
+/* /Header */
+/***************************************************/
+
+
+
+
+
+
+
+/* Footer */
+/***************************************************/
+
+	/* Footer wrappern */
+	footer{
+		/* All annan positionering i footern utgår från footern */
+		position: relative;
+		/* Padding nedåt (Viktig stilregel) */
+		padding-bottom: 0.1em !important;
+		/* Lite mindre textstorlek för allt i footern då textstorlek ärvs ned */
+		font-size: 0.8em;
+	}
+
+		/* Paragrafer i footern */
+		footer p{
+			/* Marginaljustering från topp baserad utifrån textstorlek och på sidorna baserad på fösterbredd */
+			margin: 1em 10% !important;
+			/* Tunn texttjocklek */
+			font-weight: 300;
+		}
+
+		/* Numbrerade listor i footern */
+		footer ol{
+			/* Marginaljustering från topp och sidor */
+			margin: 1em 10% 0 10%;
+		}
+
+		/* Oordnade listor i navigationswrappern i footern */
+		footer nav ul{
+			/* Bredd till 100% av wrappern */
+			width: 100%;
+		}
+
+		/* Navigationswrapper */
+		.meta_nav{
+			/* 100%-10% av wrapperns bredd */
+			width: 80%;
+			/* Skapar luft från kanterna */
+			padding: 0.8em 10%;
+			/* Skapar en prickig svart kant på den nedre delen av elementet */
+			border-bottom: 1px dotted black;
+		}
+
+		/* Navigaitonslänkar i footern */
+		footer nav a{
+			/* Blockelement */
+			display: block;
+			/* Ändrar bokstäver till gemener */
+			text-transform: lowercase;
+			/* Stor textstorlek i förhållande till normal */
+			font-size: 2em;
+			/* Svart textfärg */
+			color: black;
+			/* Bredd baserad på textstorlek för att inte få overflow */
+			width: 4.5em;
+			/* Tar bort ev. understrykning */
+			text-decoration: none;
+			/* Tunn textstorlek */
+			font-weight: 300;
+		/* Hover-effekt */
+		}footer nav a:hover, footer nav a:focus{
+				/* Grå textfärg */
+				color: #bbb;
+		/* Vid knapptryckning */
+		}footer nav a:active{
+				/* Ännu mindre textstorlek */
+				font-size: 1.9em;
+		}
+
+		/* Bild med id:t footer_img */
+		#footer_img{
+			/* Bredd är 100% av wrapperns bredd */
+			width: 100%;
+		}
+
+
+
+/* /Footer */
+/***************************************************/
+
+
+
+
+
+
+
+/* Page Headers */
+/***************************************************/
+
+	/* Visuell rubrik till about-sidan. Selektion efter id */
+	#intro_text_about{
+		word-wrap: break-word;
+		overflow: hidden;
+		/* 100% av wrapperns bredd */
+		width: 100%;
+		/* Stor textstorlek */
+		font-size: 1.5em;
+		/* Tunn texttjocklek */
+		font-weight: 300;
+		/* Vit textfärg */
+		color: white;
+	/* Efter elementet */	
+	}#intro_text_about:after{
+			/* Insättning av rubriktext */
+			content: 'About';
+	}
+
+	/* Visuell rubrik till download-sidan. Selektion efter id */
+	#intro_text_download{
+		/* Byter rad mitt i ord om så behövs */
+		word-wrap: break-word;
+		/* Tillåter ej overflow */
+		overflow: hidden;
+		/* 100% av wrapperns bredd */
+		width: 100%;
+		/* Stor textstorlek */
+		font-size: 1.5em;
+		/* Tunn texttjocklek */
+		font-weight: 300;
+		/* Vit textfärg */
+		color: white;
+	}#intro_text_download:after{
+		/* Insättning av rubriktext */
+		content: 'Download facebook photos';
+	}
+
+	/* Visuell rubrik till help-sidan. Selektion efter id */
+	#intro_text_help{
+		/* Byter rad mitt i ord om så behövs */
+		word-wrap: break-word;
+		/* Tillåter ej overflow */
+		overflow: hidden;
+		/* 100% av wrapperns bredd */
+		width: 100%;
+		/* Stor textstorlek */
+		font-size: 1.5em;
+		/* Tunn texttjocklek */
+		font-weight: 300;
+		/* Vit textfärg */
+		color: white;
+	}#intro_text_help:after{
+			/* Insättning av rubriktext */
+			content: 'Help';
+	}
+
+	/* Visuell rubrik till contact us-sidan. Selektion efter id */
+	#intro_text_contact{
+		/* Byter rad mitt i ord om så behövs */
+		word-wrap: break-word;
+		/* Tillåter ej overflow */
+		overflow: hidden;
+		/* 100% av wrapperns bredd */
+		width: 100%;
+		/* Stor textstorlek */
+		font-size: 1.5em;
+		/* Tunn texttjocklek */
+		font-weight: 300;
+		/* Vit textfärg */
+		color: white;
+	}#intro_text_contact:after{
+			/* Insättning av rubriktext */
+			content: 'Contact Us';
+	}
+
+/* /Page Headers */
+/***************************************************/
+
+
+
+
+
+
+/* Specific page styles */
+/***************************************************/
+
+	/* Index */
+	/***************************************************/
+	/***************************************************/
+	/* Download */
+	/***************************************************/
+
+
+		/* Figuren som omsluter bilden photobrowser */
+		#photobrowser_fig{
+			/* Återställer så att figuren visas trots att jag tidigare nämnt att alla figurer ej ska visas */
+			display: block;
+		}
+
+		/* Fotovisare */
+		#photobrowser{
+			/* 100% av wrapperns bredd */
+			width: 100%;
+		}
+
+		/* Avancerade inställningar-knapp */
+		#btn_options{
+			/* Mindre textstorlek en den vanliga textstorleken */
+			font-size: 0.4em;
+			/* Vanlig tjocklek */
+			font-weight: normal;
+			/* Vänster-marginaljustering baserad utifrån textstorleken */
+			margin-left: 1.4em;
+		}
+
+		/* Hjälplänk till avancerad inställningar */
+		#options_helplink{
+			/* Omvandlar till block-element */
+			display: block;
+			/* Mindre textstorlek */
+			font-size: 0.5em;
+			/* Tar bort understrykning och andra eventuella text-dekorationer */
+			text-decoration: none;
+			/* Vanlig text-stil */
+			font-style: normal;
+			/* Marginaljustering till vänster och från botten baserad utifrån textstorleken */
+			margin-left: 1.2em;
+			margin-bottom: 2.5em;
+		}
+
+	/***************************************************/
+	/* Help */
+	/***************************************************/
+
+		/* Direkt barn till leftCol - Hjälpinformation till step-by-step instructions */
+		#leftCol>p{
+			/* Mindre textstorlek */
+			font-size: 0.8em !important;
+			/* Kursiv */
+			font-style: oblique;
+		}
+
+		/* FAQ-frågorna */
+		#FAQ{
+			/* Gör toppkanten ett prickigt streck */
+			border-top: 1px dotted black;
+			/* Ökar avståndet mellan innegållet och kanterna utifrån textstorleken */
+			padding-top: 1em;
+			/* Topp och botten marginaljustering baserad utifrån textstorlek, märkt som viktig stilregel */
+			margin-top: 2em !important;
+		}
+
+		/* FAQ-svaren */
+		#FAQ_answers{
+			/* Topp och botten marginaljustering baserad utifrån textstorlek, märkt som viktig stilregel */
+			margin: 2em 0 !important;
+		}
+
+	/***************************************************/
+	/* Contact Us */
+	/***************************************************/
+	/***************************************************/
+	/* About */
+	/***************************************************/
+
+/* /Specific page styles */
+/***************************************************/
+
+}
+

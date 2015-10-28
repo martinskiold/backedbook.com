@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--Dokumenttypen är HTML 5 eftersom jag använder vissa element knutna till html5-dokumenttypen, däribland header, main och footer elementen. Anledningen till att jag valt att använda HTML5 är att den innehåller fler valmöjligheter gällande html-element. Eftersom jag fortfarande studerar så är det inte så viktigt för mig att välja den standard som för tillfället stödjs i flest webbläsare. När jag går ut universitetet kommer html5 förmodligen vara den mest använda och stödda versionen av HTML. Jag anger att dokumentet är HTML5 genom ovanstående markup: <!DOCTYPE HTML>. Tidigare har man specifikt behövt ange html-version genom en länk. HTML5 tog dock bort detta för att förenkla processen och numera används endast <!DOCTYPE HTML> för att ange att dokumentet är HTML5.-->
+
+<!--Övrigt om kommentering. Jag kommenterar inte exakt alla element i alla dokument. När jag kommenterat ett element kommer jag i de flesta fall inte kommentera det igen i andra dokument då det känns överflödigt. Jag har ju trots allt redan visat att jag förstår vad det handlar om. HTML-dokumenten under mappen views har därför inte lika mycket kommentarer som index-dokumentet-->
+
+<!--lang anger att språket på hemsidan är engelska och elementet att det handlar om ett html-dokument-->
+<html lang="en">
+<!--Head innehåller information om hemsidan-->
+<head>
+	<!--Metadata till hemsidan. Innehåller namn på skaparen, nyckelord och vilka typer av tecken som kommer förekomma på hemsidan-->
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="backed, book, backedbook.com, backedbook, 
+			facebook photos, download, photos, index, home, backup, why, Martin Skiöld"/>
+
+	<meta name="description" content="backedbook.com provides an automatic tool for 
+			downloading facebook photos in an instant. Our services are free of charge and 
+			no internal account is needed to use the downloading services. All you need to 
+			do is to login to facebook through the facebook plugin on our website and we 
+			will handle the rest for you."/>
+			
+	<meta name="author" content="Martin Skiöld"/>
+
+	<!--Titel till hemsidan, visas uppe i hemsidans flik i webbläsaren-->
+	<title>backedbook.com - Download facebook photos</title>
+	
+	<!-- Sätter viewport till skärmens faktiska storlek -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!--Hämtning av stilmallar-->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen and (min-width: 800px)"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/print/print.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/viewport_small/main.css" media="screen and (max-width: 799px)"/>
+	
+</head>
+<!--Innehållet i hemsidan-->
+<body>
+	<!-- Bakgrundsbild, width ej originalstorlek för att inte uppta för stor plats om sidan visas utan css. Width används i det här fallet också för att skapa en mer behaglig inladdning av sidan vid trög uppkoppling -->
+	<img id="background_img" src="assets/img/background/woman_photographer.jpg" alt="Woman Photographer background image" width="1280"/>
+
+	<!--Uppdelning av hemsidan i logiska grupper, där header är en grupp som i det här fallet innehåller de flesta navigationslänkar och logotypen.-->
+	<header>
+		<!--Logotyp i form av text-->
+		<!--Tabindex anger i vilken ordning tab-navigationen sker. Ju högre tal, desto lägre prioritering-->
+		<h1><a href="index.html" tabindex="1">backedbook.com</a></h1>
+		<!--Navigationslänkar-->
+		<nav class="main_nav">
+			<!--Onumrerad lista, då ordningen inte har någon semantisk betydelse-->
+			<ul>
+				<li><a href="include/views/download.html" tabindex="5">Download photos</a></li>
+				<li><a href="include/views/help.html" tabindex="4">Help</a></li>
+				<li><a href="#why" tabindex="3">Why?</a></li>
+				<!--Tabordningen är tänkt så att den först hoppar mellan samtliga navigationslänkar, såväl inom header och footer och sedan till innehållet i main och sist övrigt innehåll i footern, detta för att snabba upp navigationen för personer med fysiska funktionshinder-->
+			</ul>
+		</nav>
+	</header>
+
+	<!--Uppdelning av hemsidan, main är gruppen med det primära innehållet på den aktuella delsidan.-->
+	<main>
+		<!--Vänster kolumn-->
+		<div id="leftColIntro">
+			<!--Kort förklarande text om hemsidan-->
+			<p tabindex="8" id="intro_text">
+				<span class="large_text">Welcome to BackedBook</span><!--Radbrytning--><br/> 
+				<span class="small_text">We download your facebook photos for you!</span>
+			</p>
+		</div>
+		<!--Höger kolumn-->
+		<div id="rightColIntro">
+			<!--Figur som inte är direkt kopplad till någonting-->
+			<figure>
+				<!--Bild med samma bredd och höjd som ursprungsbilden för att hemsidan redan ska veta storleken på bilderna innan de fullständigt laddas in-->
+				<img class="intro_photo" src="assets/img/photos_to_computer.png" alt ="Facebook Logotype" width="256"/>
+			</figure>
+		</div>
+
+		<!--Vägledande pil nedåt -->
+		<div id="arrow_down">
+			<a tabindex="9" id="arrow_down_link" href="#why"></a>
+		</div>
+		
+		<!--höger kolumn-->
+		<div id="oneCol">
+			<!--Uppdelning av hemsidan, avser den del som handlar om varför man ska använda sig av hemsidan-->
+			<div id="why">
+				<!--Andra nivåns rubrik, underrubrik till förstarubriken-->
+				<h2 tabindex="10">Why backedbook.com?</h2>
+				<!--Tredje nivåns rubrik, underrubrik till "Why backedbook.com?"-->
+				<h3 tabindex="11">The importance of backups</h3>
+				<!--Text om vikten av backups-->
+				<p tabindex="12">
+					According to statistics about data loss so much as 70% of business people have experienced data loss and 93% of companies that lost all data for 10 days or more filed for bankruptcy within one year of the incident. 50% filed for bankruptcy immediately. What would happen if this was facebook? They have no responsibilities towards you as a user and will never have to compensate you for loss of photos. Overall, what we're saying is that Facebook can not ensure the future existence of your facebook information and data. It is equally important to have a backup of your facebook photos as of your other personal digital belongings. What would happen if facebook themselves lose important data and photos or if you somehow lose your account? Only You can make sure it won't affect you majorly when this happens - and that is by backing up your data.
+				</p>
+
+				<h3 tabindex="13">What happens after Facebook?</h3>
+				<p tabindex="14">
+					What will happen when you quit Facebook or Facebook quits you is that all your uploaded photos and all the photos you ever been tagged in is gone, <em>forever</em>. Facebook has no responsibility to help you in this situation.
+				</p>
+
+				<!--En uppmaning i citat-form-->
+				<blockquote tabindex="15"><span>Don't let strangers control Your photos. <br/> Take control of them yourself!</span></blockquote>
+
+				<h3 tabindex="16">Why have physical copies of your photos?</h3>
+				<p tabindex="17">
+					Not only does it ensure the existence of your photos in the future, it's also very flexible. You can put them on any computer you like and show them without ever having to worry about your internet connection.
+				</p>
+
+				<h3 tabindex="18">Why use backedbook.com and not other tools to download facebook photos?</h3>
+				<p tabindex="19">
+					BackedBook's advanced logic is the forefront of easyness. Facebook offers a service to download your Facebook albums aswell. This service is far less advanced and comprehensive than BackedBook's logic. BackedBook will create semantic structure of photoalbums from information captured with the help of facebook. Also, tagged people will be inserted to the description of each photo once downloaded so that you'll never forget names or faces ever again.
+					<br/><br/>
+					Also, face it - BackedBook is <em>easy</em>! <br/><br/> To download your facebook photos, there are only 3 simple steps to be followed:
+				</p>
+				<!--Numrerad lista över stegen för nedladdning-->
+				<ol>
+					<li tabindex="20"><p>Login with the facebook plugin on <a tabindex="21" href="include/views/download.html">backedbook.com/download</a></p></li>
+					<li tabindex="22"><p>Choose the photos you'd like to download</p></li>
+					<li tabindex="23"><p>Download</p></li>
+				</ol>
+			</div>
+		</div>
+	</main>
+
+	<!--Uppdelning av hemsidan, footer är den gruppering som är längst ned på hemsidan, här finns några navigationslänkar och kort information om hemsidan och copyright m.m.-->
+	<footer>
+		<div id="footer_img_wrapper">
+			<img id="footer_img" src="assets/img/background/footer_img.jpg" alt="Woman Photographer background image"/>
+			<!--Logisk uppdelning i navigationslänkar-->
+			<nav class="meta_nav">
+				<ul>	
+					<li><a href="include/views/contact.html" tabindex="6">Contact Us</a></li>
+					<li><a href="include/views/about.html" tabindex="7">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Upphovsrättserkännande -->
+		<ol tabindex="24">
+			<li>Picture attribution:</li>
+			<li>
+				<a tabindex="25" href="https://www.iconfinder.com/icons/198660/buttonz_facebook_icon#size=256">
+					Facebook icon (Manipulated)
+				</a>
+				 by Hosting Kingdom 
+				<a tabindex="26" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="27" href="https://www.iconfinder.com/icons/289610/computer_device_laptop_mac_mac_os_macbook_netbook_notebook_workplace_icon#size=256">
+					Macbook icon (Manipulated)
+				</a>
+				 by Pixel Buddha 
+				<a tabindex="28" href="http://creativecommons.org/licenses/by/3.0/">CC by 3.0
+			</a>
+			</li>
+			<li>
+				<a tabindex="29" href="https://www.flickr.com/photos/pedrosimoes7/9100222565">
+					Woman Photographer (Manipulated)
+				</a>
+				 by Pedro Ribeiro Simões 
+				<a tabindex="30" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="31" href="https://www.flickr.com/photos/belakangtabir/5989759827">
+					Everyone smiles in the same language (Manipulated)
+				</a> by Haifeez 
+				<a tabindex="32" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+		</ol>
+		<!--Kort information om hemsidan och varför den skapades-->
+		<p tabindex="33">
+			BackedBook is the supreme website for downloading Facebook photos easily and effectively. The website is currently operated by BackedBook. BackedBook has offices in both Stockholm and Singapore. Please take a look at the Contact Us-section for more information about contact information or visit the About-section for more information about the website and the idea behind it.
+		</p>
+		<p tabindex="34">
+			<em>Please note!</em>
+			<br/>
+			This website is part of a student project and is currently Under Development! Contact information, information about the website and the company is to be considered false.
+		</p>
+		<p tabindex="35">
+			<!--&copy skapar ett copyright-tecken-->
+			Copyright &copy; 2014 backedbook.com
+		</p>
+	</footer>
+</body>
+</html>

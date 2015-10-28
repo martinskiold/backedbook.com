@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--Dokumenttyp: HTML 5-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+
+	<meta name="keywords" content="backed, book, backedbook.com, backedbook, 
+	facebook photos, download, photos, Martin Skiöld, contact us, contact, 
+	customer support, support, help, office times, stockholm, singapore, 
+	phonenumeber, telephone, open"/>
+
+	<meta name="description" content="If you have any questions, inquiries or just 
+				simply suggestions, feel free to contact us at any time. There are 
+				different ways to come in contact with us. On this webpage there is 
+				a contact form if you wish to contact us directly. Our Customer 
+				Support will attend to it shortly. If you wish to contact us via 
+				telephone or just visit one of our offices, please see the contact
+				 information table on the bottom of the page."/>
+
+	<meta name="author" content="Martin Skiöld"/>
+
+	<title>backedbook.com - Contact Information &amp; Customer Support</title>
+	
+	<!-- Sätter viewport till skärmens faktiska storlek -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!--Hämtning av stilmall-->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/main.css" media="screen and (min-width: 800px)"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/print/print.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/viewport_small/main.css" media="screen and (max-width: 799px)"/>
+	
+</head>
+<body>
+	<!-- Bakgrundsbild -->
+	<img id="background_img" src="../../assets/img/background/customer_support.jpg" alt="Customer Support background image" width="1280"/>
+
+	<header>
+		<h1><a tabindex="1" href ="../../index.html">backedbook.com</a></h1>
+		<nav class="main_nav">
+			<ul>
+				<li><a tabindex="5" href="download.html">Download Photos</a></li>
+				<li><a tabindex="4" href="help.html">Help</a></li>
+				<li><a tabindex="3" href="../../index.html#why">Why?</a></li>
+				<li><a tabindex="2" href="../../index.html" >Home</a></li>
+				<!--Taborder hoppar till navigationslänkarna about och contact us innan de fortsätter ned från denna punkt, för att skapa en snabb navigation för personer med fysiska funktionshinder-->
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Rubrik (Visuellt) -->
+		<div id="leftColIntro_header">
+			<!-- Tom, innehåll läggs till via css -->
+			<p id="intro_text_contact"></p>
+		</div>
+
+		<!--Vägledande pil nedåt -->
+		<div id="arrow_down">
+			<a tabindex="8" id="arrow_down_link"  href="#contact_us"></a>
+		</div>
+		
+		<div id="oneCol">
+			<!--Andra nivåns rubrik, visar att hemsidan står på Contact-sidan-->
+			<h2 id="contact_us" tabindex="9">Contact Us</h2>
+			<figure>
+				<a tabindex="11" href="#contact_info">
+					<img src="../../assets/img/icon_customer_support.gif" alt="Customer Support icon" width="256"/>
+				</a>
+			</figure>
+			<!--Information om vad man kan göra på delsidan-->
+			<p tabindex="10">
+				If you have any questions, inquiries or just simply suggestions, 
+				feel free to contact us at any time. There are different ways to 
+				come in contact with us. <br/><br/>Below there is a contact form
+				if you wish to contact us directly. Our Customer Support will attend to it shortly.
+			</p>
+			<p tabindex="12">
+				<br/>
+				If you wish to contact us via telephone or just visit one of our offices, please see the contact information table on the bottom of the page.
+			</p>
+			<!--Underrubrik till Contact Us-->
+			<h3  tabindex="13">Contact form</h3>
+			<!--Formulär där besökare kan skicka meddelande till operatörer av hemsidan. Skriver inte attributet action och method i och med att jag inte har en server att skicka datan till-->
+			<form id="submit_message">
+			<!--Logisk uppdelning av formuläret-->
+				<fieldset>
+						<!--Label är texten kopplad till inputelementet. Input är textboxen där användaren kan skriva text. Saknar implementation av name-attributet då det endast behövs ifall formuläret verkligen ska skickas-->	
+						<label for="input_name">Name:<br/><input id="input_name" class="input_text" tabindex="14" type="text" required/></label>
+						<!--Här kan användaren skriva in text om sitt telefonnummer, textboxen är av typen "tel" vilket gör att den godtar sådant som liknar telefonnummer-->
+						<label for="input_phone">Telephone:<br/><input id="input_phone" class="input_text" tabindex="15" type="tel" required/></label>
+						<!--Här kan användaren skriva in text om sin email. Input-elementet är av typen email och accepterar bara en viss följd av tecken, sådan teckenföljd som alla email-adresser har.-->
+						<label for="input_email">Email:<br/><input id="input_email" class="input_text" tabindex="16" type="email" required/></label>
+						<!--Här kan användaren skriva in meddelandet i en lite större textbox-->
+						<label for="input_message">Message:<br/><textarea id="input_message" tabindex="17" rows="5" cols="60" required></textarea></label>
+						<!--Knapp för att skicka formuläret-->
+						<input id="submit" tabindex="18" type="submit"/>
+						<!--Knapp för att återställa text i alla input-boxar i formuläret-->
+						<input id="reset" tabindex="19" type="reset"/>
+				</fieldset>
+			</form>
+			<!--Underrubrik till Contact Us-->
+			<h3 id="contact_info">Contact information</h3>
+			<!--Tabell med kontaktinformation-->
+			<table>
+				<thead>
+					<!--Första tabellraden, innehåller rubrikerna-->
+					<tr tabindex="20">
+						<th id="office">Office:</th>
+						<th id="city">City:</th>
+						<th id="address">Address:</th>
+						<th id="telephone">Phonenumber:</th>
+						<th id="office_times">Office times:</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--Andra tabellraden, innehåller data till rubrikerna, kopplas till varje rubrik genom en header-->
+					<tr class="data" tabindex="21">
+						<td headers="office">BackedBook Developer Office</td>
+						<td headers="city">Stockholm</td>
+						<td headers="address">Amiralsgatan 26, 08212, Stockholm, Sweden</td>
+						<td headers="telephone">+46 8-123431</td>
+						<td headers="office_times">mon-fri: 07.00-16.00, sat-sun: closed</td> 
+					</tr>
+					<!--Tredje tabellraden, ==//==-->
+					<tr class="data" tabindex="22">
+						<td headers="office">BackedBook Customer Support</td>
+						<td headers="city">Singapore</td>
+						<td headers="address">35th Queen's Avenue, 123-32, Singapore, Singapore</td>
+						<td headers="telephone">+65 2114212</td>
+						<td headers="office_times">mon-sun: 04.00-23.55</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer_img_wrapper">
+			<img id="footer_img" src="../../assets/img/background/footer_img.jpg" alt="Woman Photographer background image"/>
+			<nav class="meta_nav">
+				<ul>	
+					<li><a class="active" tabindex="6" href="contact.html">Contact Us</a></li>
+					<li><a tabindex="7" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Upphovsrättserkännande -->
+		<ol tabindex="23">
+			<li>Picture attribution:</li>
+			<li>
+				<a tabindex="24" href="http://picjumbo.com/call-operator-with-bluetooth-handsfree/">Call Operator with bluetooth handsfree (Manipulated)
+				</a>
+				 by Viktor Hanacek
+				<a tabindex="25" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="26" href="https://www.flickr.com/photos/belakangtabir/5989759827">
+					Everyone smiles in the same language (Manipulated)
+				</a>
+				 by Haifeez 
+				<a tabindex="27" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="28" href="https://www.iconfinder.com/icons/175595/online_support_icon#size=128">Online, Support Icon 
+				</a>
+				 by Visual Pharm 
+				<a tabindex="29" href="http://creativecommons.org/licenses/by/2.0/">
+				 	CC by 2.0
+				</a>
+			</li>
+		</ol>
+		<p tabindex="30">
+			BackedBook is the supreme website for downloading Facebook photos easily and effectively. The website is currently operated by BackedBook. BackedBook has offices in both Stockholm and Singapore. Please take a look at the Contact Us-section for more information about contact information or visit the About-section for more information about the website and the idea behind it.
+		</p>
+		<p tabindex="31">
+			<em>Please note!</em>
+			<br/>
+			This website is part of a student project and is currently Under Development! Contact information, information about the website and the company is to be considered false.
+		</p>
+		<p tabindex="32">
+			<!--&copy skapar ett copyright-tecken-->
+			Copyright &copy; 2014 backedbook.com
+		</p>
+	</footer>
+</body>
+</html>

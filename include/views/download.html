@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--Dokumenttyp: HTML 5-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="backed, book, backedbook.com, backedbook, 
+				facebook photos, download, photos, backup, Martin Skiöld"/>
+
+	<meta name="description" content="In a few moments you can enjoy your 
+				physical copies of your facebook photos. Share photos anytime 
+				without anyone regulating your access to Your photos! To download 
+				the photos, just follow the steps provided on this page!"/>
+
+	<meta name="author" content="Martin Skiöld"/>
+
+	<title>backedbook.com - Download photos</title>
+	
+	<!-- Sätter viewport till skärmens faktiska storlek -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!--Hämtning av stilmall-->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/main.css" media="screen and (min-width: 800px)"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/print/print.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/viewport_small/main.css" media="screen and (max-width: 799px)"/>
+	
+</head>
+<body>
+	<!-- Bakgrundsbild -->
+	<img id="background_img" src="../../assets/img/background/michael_jordan.jpg" alt="Basketball (Michael Jordan) background image" width="1280"/>
+
+	<header>
+		<h1><a tabindex="1" href ="../../index.html">backedbook.com</a></h1>
+		<nav class="main_nav">
+			<ul>
+				<li><a tabindex="5" class="active" href="download.html">Download Photos</a></li>
+				<li><a tabindex="4" href="help.html">Help</a></li>
+				<li><a tabindex="3" href="../../index.html#why">Why?</a></li>
+				<li><a tabindex="2" href="../../index.html" >Home</a></li>
+				<!--Taborder hoppar till navigationslänkarna about och contact us innan de fortsätter ned från denna punkt, för att skapa en snabb navigation för personer med fysiska funktionshinder-->
+			</ul>
+		</nav>
+	</header>
+
+	<main id="download_wrapper">
+		<!-- Sidrubrik, visuell -->
+		<div id="leftColIntro_header">
+			<!-- Tom, innehåll läggs till i css -->
+			<p id="intro_text_download"></p>
+		</div>
+
+		<!--Vägledande pil nedåt -->
+		<div id="arrow_down">
+			<a tabindex="8" id="arrow_down_link" href="#download"></a>
+		</div>
+
+		<div id="oneCol">
+			<!--Andra nivåns rubrik, anger vilken delsida användaren står på-->
+			<h2 id="download" tabindex="9">Download Photos</h2>
+
+			<figure>
+				<img tabindex="11" src="../../assets/img/download.gif" alt="Download icon" width="256"/>
+			</figure>
+			<!--Vägleder användaren-->
+			<p tabindex="10">
+				Congratulations! Just in a few moments you can enjoy your 
+				physical copies of your facebook photos. Share photos anytime 
+				without anyone regulating your access to Your photos! Stay 
+				safe and keep backups! <br/> To download, just follow the 
+				steps in order!
+			</p>
+			<!--Numrerad lista för att ange stegen mer semantiskt-->
+			<ol>
+				<li>
+					<p tabindex="12">
+						Login to facebook using the facebook plugin down below:
+					</p>
+					<!--Ska egentligen vara en plugin skriven i javascript, men då kursen inte behandlar js så mycket så visar jag mest här att det ska finnas en plugin-knapp till login genom facebook API:t-->
+					<button tabindex="13" id="btn_login">Login Facebook</button>
+				</li>
+				<li>
+					<!--Här ska man kunna välja lite inställningar om nedladdningen och även välja vilka foton som ska laddas ned. Kommer kräva en del javascript och serverspråk varför jag valt att inte implementera denna del, utan visar bara med en exempelbild-->
+					<p tabindex="14">
+						Choose the photos you would like to download:
+					</p>
+					<figure id="photobrowser_fig">
+						<img id="photobrowser" tabindex="15" src="../../assets/img/photobrowser.jpg" alt="The photobrowser"/>
+					</figure>
+				</li>
+				<li>
+					<p tabindex="16">
+						Want to change configurations with your download? Now 
+						is the time to do so!
+					</p>
+					<!--En knapp för att komma åt avancerade inställningar med nedladdningen-->
+					<button tabindex="17" id="btn_options">Advanced Options</button>
+					<!--Hjälplänk för de som är förvirrade, leder till hjälpinformation på help-sidan-->
+					<label>
+						<a tabindex="18" id="options_helplink" href="help.html#help_advanced_options">Help me!</a>
+					</label>
+				</li>
+				<li>
+					<!--Knapp för nedladdning-->
+					<button tabindex="19" id="btn_download">Download Photos</button>
+				</li>
+			</ol>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer_img_wrapper">
+			<img id="footer_img" src="../../assets/img/background/footer_img.jpg" alt="Woman Photographer background image"/>
+			<nav class="meta_nav">
+				<ul>	
+					<li><a tabindex="6" href="contact.html">Contact Us</a></li>
+					<li><a tabindex="7" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Upphovsrättserkännande -->
+		<ol tabindex="20">
+			<li>Picture attribution:</li>
+			<li>
+				<a tabindex="21" href="https://www.flickr.com/photos/belakangtabir/5989759827">Everyone smiles in the same language (Manipulated)
+				</a>
+				 by Haifeez 
+				<a tabindex="22" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="23" href="http://www.flickr.com/photos/nostri-imago/4439636726">
+					Michael Jordan, Blue Dunk, Lisle, IL, 1987 (Manipulated)
+				</a>
+				 by Cliff 
+				<a tabindex="24" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="25" href="https://www.iconfinder.com/icons/294391/box_business_delivery_download_install_open_packing_peanut_product_receive_retail_shipping_software_icon#size=128">
+					Box, Business, Delivery, Download... 
+				</a>
+				 by Jonathan Patterson 
+				<a tabindex="26" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+		</ol>
+		<p tabindex="27">
+			BackedBook is the supreme website for downloading Facebook photos easily and effectively. The website is currently operated by BackedBook. BackedBook has offices in both Stockholm and Singapore. Please take a look at the Contact Us-section for more information about contact information or visit the About-section for more information about the website and the idea behind it.
+		</p>
+		<p tabindex="28">
+			<em>Please note!</em>
+			<br/>
+			This website is part of a student project and is currently Under Development! Contact information, information about the website and the company is to be considered false.
+		</p>
+		<p tabindex="29">
+			<!--&copy skapar ett copyright-tecken-->
+			Copyright &copy; 2014 backedbook.com
+		</p>
+	</footer>
+</body>
+</html>

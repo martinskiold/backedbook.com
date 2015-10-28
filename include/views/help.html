@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<!--Dokumenttyp: HTML 5-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="backed, book, backedbook.com, backedbook, 
+				facebook photos, download, photos, help, support, question"/>
+
+	<meta name="description" content="Having trouble using backedbook.com?
+				Don't you worry, welcome to the help section of BackedBook. 
+				On this page we present to you step by step instructions on 
+				how to download your facebook photos, and also answers of 
+				FAQ, Frequently Asked Questions."/>
+				
+	<meta name="author" content="Martin Skiöld"/>
+
+	<title>backedbook.com - Help</title>
+
+	<!-- Sätter viewport till skärmens faktiska storlek -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!--Hämtning av stilmall-->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/main.css" media="screen and (min-width: 800px)"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/print/print.css" media="print"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/viewport_small/main.css" media="screen and (max-width: 799px)"/>
+	
+</head>
+<body>
+	<!-- Bakgrundsbild -->
+	<img id="background_img" src="../../assets/img/background/crossroads.jpg" alt="Crossroads background image" width="1280"/>
+
+	<header>
+		<h1><a tabindex="1" href="../../index.html">backedbook.com</a></h1>
+		<nav class="main_nav">
+			<ul>
+				<li><a tabindex="5" href="download.html">Download Photos</a></li>
+				<li><a class="active" tabindex="4" href="help.html">Help</a></li>
+				<li><a tabindex="3" href="../../index.html#why">Why?</a></li>
+				<li><a tabindex="2" href="../../index.html" >Home</a></li>
+				<!--Taborder hoppar till navigationslänkarna about och contact us innan de fortsätter ned från denna punkt, för att skapa en snabb navigation för personer med fysiska funktionshinder-->
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Sidrubrik -->
+		<div id="leftColIntro_header">
+			<!-- Tom, innehåll läggs till via css -->
+			<p id="intro_text_help"></p>
+		</div>
+
+		<!--Vägledande pil nedåt -->
+		<div id="arrow_down">
+			<a tabindex="8" id="arrow_down_link" href="#help"></a>
+		</div>
+
+		<!-- Wrapper för flera kolumner -->
+		<div id="multiCol">
+			<figure >
+				<img tabindex="10" src="../../assets/img/icon_help.gif" alt="help icon" width="256" height="256"/>
+			</figure>
+
+			<!--Andra nivåns rubrik för att visa vilken delsida användaren står på-->
+			<h2 tabindex="8" id="help">Help</h2>
+			<!--Vägledande information om delsidan-->
+			<p tabindex="9">
+				Having trouble using backedbook.com? Is it too hard or 
+				are you just having a technical problem with the service? 
+				Don't you worry, welcome to the help section of BackedBook. 
+				To the left we present you step by step instructions on 
+				how to download your facebook photos, and to the right 
+				you will find FAQ, Frequently Asked Questions.
+			</p>
+			<!--Vänster kolumn, innehåller steg för steg instruktioner-->
+			<div id="leftCol">
+				<h3 tabindex="11" id="instructions">Step by step instructions</h3>
+				<!--Numrerad lista med instruktioner-->
+				<ol>
+					<li tabindex="12" id="help_login">
+						<p>Navigate to the Download page and press the button with 
+							the text 'Login Facebook': 
+							<a tabindex="13" href="download.html#btn_login">Login Facebook</a>
+						</p>
+					</li>
+					<li tabindex="14" id="help_facebook">
+						<p>A popup-window will appear. Type in your account information 
+							on the presented form.</p>
+					</li>
+					<li tabindex="15" id="help_browser">
+						<p>Now you are logged in to your Facebook account. The photobrowser 
+							below the login-button will now start adding photos to your 
+							download configuration.</p>
+					</li>
+					<li tabindex="16" id="help_directories">
+						<p>The presented directories and its included photos shows the 
+							suggested structure of your final download. The suggested 
+							directories are: Tagged Photos, My Photoalbums, My Smartphone 
+							Photos and My Videos. However you can choose whatever 
+							structure you'd like.</p>
+					</li>
+					<li tabindex="17" id="help_check_photos">
+						<p>Using the checkbutton on the left side of each photo/directory 
+							you are able to choose exactly which directories and/or photos 
+							you would like to include in your final download. Check to include, 
+							uncheck to exclude.</p>
+					</li>
+					<li tabindex="18" id="help_advanced_options">
+						<p>Once you have chosen what photos to include in your download, 
+							press Advanced Options to view or change advanced options, such 
+							as changing filenames and/or directorynames. When you feel finished 
+							with the setup, press the Download button at: 
+							<a tabindex="19" href="download.html#btn_download">Download Photos</a>
+							, to download the chosen Facebook Photos.</p>
+					</li>
+					<li tabindex="20" id="help_progressbar">
+						<p>Watch the progress on the progressbar below the download-button. Once 
+							the progressbar has disappeared and you are presented with the text: 
+							Download Complete, your download has finished. Right-click the 
+							downloaded .zip-file in your browser and select 'Extract All...'.</p>
+					</li>
+					<li tabindex="21">
+						<p>There you go, now you have your personal backup of your facebook photos
+							, <em>easy</em>, right?</p>
+					</li>
+				</ol>
+				<p tabindex="22">
+					<br/>
+					If you have any problem with the step by step instructions, feel free to 
+					contact our customer support. We will gladly help you with your issue. 
+					<a tabindex="23" href="contact.html">Navigate to Contact Us</a>
+				</p>
+			</div>
+
+			<!--Höger kolumn, innehåller FAQ-frågor-->
+			<div id="rightCol">
+				<h3 id="FAQ" tabindex="24">FAQ</h3>
+				<!--Onumrerad lista med FAQ. Onumrerad eftersom ordningen inte spelar någon roll-->
+				<ul>
+					<!--Varje FAQ-fråga är länkad till sitt svar genom anchor.-->
+					<li><a tabindex="25" href="#FAQ1">Why can't I login to my Facebook account?</a></li>
+					<li><a tabindex="26" href="#FAQ2">My photos don't show up on the integrated photobrowser?</a></li>
+					<li><a tabindex="27" href="#FAQ3">Do I have to download all my facebook photos at once?</a></li>
+					<li><a tabindex="28" href="#FAQ4">Why am I downloading all my photos linked to my profile?</a></li>
+					<li><a tabindex="29" href="#FAQ5">Can I download my friends tagged photos?</a></li>
+					<li><a tabindex="30" href="#FAQ6">Is it possible to add a certain name to all my photos?</a></li>
+				</ul>
+			</div>
+
+			<!-- Clear före horizontal ruler, Visuell -->
+			<div class="clear clearMargin"></div>
+			<hr/>
+
+			<!--Grupp för FAQ-svaren-->
+			<div id="FAQ_answers">
+				<h4 tabindex="31">FAQ answers</h4>
+				<ul>
+					<li tabindex="32" id="FAQ1">
+						<p>
+							<!--Frågan är empathized för att frågan har en viktig semantisk innebörd i texten-->
+							<em>Why can't I login to my Facebook account?</em>
+							<br/><br/>
+							If you can't login to your Facebook account you need to contact Facebook 
+							Support to resolve the issue. Since we at BackedBook are not affiliated 
+							with Facebook in any way we can't resolve this issue for you. Please use 
+							this link to navigate to Facebook Support. 
+							<a tabindex="33" href="https://www.facebook.com/help/">Navigate to Facebook Help Center</a>
+						</p>
+					</li>
+					<li tabindex="34" id="FAQ2">
+						<p>
+							<em>My photos don't show up on the integrated photobrowser?</em>
+							<br/><br/>
+							This means there is a problem between the BackedBook server and the Facebook 
+							server. Please notify us through the contact form. We will do everything 
+							possible to assist you with the issue. 
+							<a tabindex="35" href="contact.html#submit_message">Navigate to Contact Form</a>
+						</p>
+					</li>
+					<li tabindex="36" id="FAQ3">
+						<p>
+							<em>Do I have to download all my facebook photos at once?</em>
+							<br/><br/>
+							No, BackedBook offers you the possibility to choose whatever photos you 
+							wish to download.
+						</p>
+					</li>
+					<li tabindex="37" id="FAQ4">
+						<p>
+							<em>Why am I downloading all my photos linked to my profile?</em>
+							<br/><br/>
+							The reason is you skipped to choose what photos to download and went straight 
+							ahead and pressed the download button. Please read the step by step instructions 
+							on how to download Facebook photos correctly. 
+							<a tabindex="38" href="help.html#instructions">Navigate to Step by step instructions</a>
+						</p>
+					</li>
+					<li tabindex="39" id="FAQ5">
+						<p>
+							<em>Can I download my friends tagged photos?</em>
+							<br/><br/>
+							Facebook and each account's privacy settings sets the boundary for which photos that 
+							are allowed to be downloaded. A rule of thumb is that all photos your account is 
+							eglible to view is also downloadable.
+						</p>
+					</li>
+					<li tabindex="40" id="FAQ6">
+						<p>
+							<em>Is it possible to add a certain name to all my photos?</em>
+							<br/><br/>
+							Yes, of course. There are advanced options for the download on the download page. 
+							Below the photobrowser there is a button called 'advanced options', that will bring 
+							you to the advanced options, such as, among others, changing all the filenames in 
+							one step. 
+							<a tabindex="41" href="download.html#btn_options">Navigate to Advanced Options</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer_img_wrapper">
+			<img id="footer_img" src="../../assets/img/background/footer_img.jpg" alt="Woman Photographer background image"/>
+			<nav class="meta_nav">
+				<ul>	
+					<li><a tabindex="6" href="contact.html">Contact Us</a></li>
+					<li><a tabindex="7" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Upphovsrättserkännande -->
+		<ol tabindex="42">
+			<li>Picture attribution:</li>
+			<li>
+				<a tabindex="43" href="https://www.flickr.com/photos/nicksie2008/8489106098">
+					Which Way Now? (Manipulated)
+				</a>
+				 by Nick Page 
+				<a tabindex="44" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="45" href="https://www.flickr.com/photos/belakangtabir/5989759827">
+					Everyone smiles in the same language (Manipulated)
+				</a>
+				 by Haifeez 
+				<a tabindex="46" href="http://creativecommons.org/licenses/by/2.0/">
+					CC by 2.0
+				</a>
+			</li>
+			<li>
+				<a tabindex="47" href="https://www.iconfinder.com/icons/175672/help_icon#size=256">
+					Help icon
+				</a>
+				 by Visual Pharm 
+				<a tabindex="48" href="http://creativecommons.org/licenses/by/2.0/">
+				 	CC by 2.0
+				</a>
+			</li>
+		</ol>
+		<p tabindex="49">
+			BackedBook is the supreme website for downloading Facebook photos easily and effectively. The website is currently operated by BackedBook. BackedBook has offices in both Stockholm and Singapore. Please take a look at the Contact Us-section for more information about contact information or visit the About-section for more information about the website and the idea behind it.
+		</p>
+		<p tabindex="50">
+			<em>Please note!</em>
+			<br/>
+			This website is part of a student project and is currently Under Development! Contact information, information about the website and the company is to be considered false.
+		</p>
+		<p tabindex="51">
+			<!--&copy skapar ett copyright-tecken-->
+			Copyright &copy; 2014 backedbook.com
+		</p>
+	</footer>
+</body>
+</html>
